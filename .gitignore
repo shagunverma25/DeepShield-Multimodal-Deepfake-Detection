@@ -1,8 +1,7 @@
 # Dataset — too large for GitHub
 datasets/
 
-# Model weights — too large for GitHub
-models/weights/
+
 
 # Python cache
 __pycache__/
