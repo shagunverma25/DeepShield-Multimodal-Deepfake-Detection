@@ -91,6 +91,8 @@ def get_dataloaders(dataset_path, batch_size=32):
     else 'validation' if os.path.exists(os.path.join(dataset_path, 'validation')) \
     else 'val'
 
+    val_dataset = DeepfakeDataset(dataset_path, split=val_split)
+
     train_loader = DataLoader(
         train_dataset,
         batch_size=batch_size,
